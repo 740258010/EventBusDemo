@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <com.longrise.pczhaojue.eventbusdemo.MyScrollView
+        android:id="@+id/second_msv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/second_fl"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#0ffff0"/>
+            <TabHost
+                android:id="@+id/second_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:id="@+id/main_tab_group"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="bottom"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/guide_home"
+                            android:checked="true"
+                            android:textColor="@color/colorAccent"
+                            android:text="首页"/>
+
+                        <RadioButton
+                            android:id="@+id/guide_store"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="商城"/>
+
+                        <RadioButton
+                            android:id="@+id/guide_cart"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="购物车"/>
+
+                        <RadioButton
+                            android:id="@+id/guide_ww"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="我的"/>
+                    </RadioGroup>
+                </FrameLayout>
+
+            </TabHost>
+
+            <LinearLayout
+                android:id="@+id/content1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="200dp"/>
+            <LinearLayout
+                android:id="@+id/content2"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="#00ffff"
+                android:layout_height="200dp"/>
+
+            <LinearLayout
+                android:id="@+id/content3"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="#00f34f"
+                android:layout_height="200dp"/>
+
+            <LinearLayout
+                android:id="@+id/content4"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="#f0000f"
+                android:layout_height="200dp"/>
+        </LinearLayout>
+    </com.longrise.pczhaojue.eventbusdemo.MyScrollView>
+</android.support.constraint.ConstraintLayout>
